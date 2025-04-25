@@ -834,8 +834,8 @@ footer p{
 }
 
 .about .about-script {
-    width: 90%;
-   
+    width: 100%;
+    padding: 30px 20px; 
 }
 
 .about .about-script h4 {
