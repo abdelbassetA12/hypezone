@@ -13,7 +13,7 @@
 /* ✅ تنسيق الصفحة بالكامل */
 body {
     
-    
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth; /* تمكين التمرير السلس */
@@ -39,7 +39,7 @@ a {
 
 /* ✅ تنسيق النافبار */
 
-  .container {
+ .container {
     position:  sticky;
     
     top: 0;
@@ -48,7 +48,6 @@ a {
 }
 .navbar {
    background-color: #fff;
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -727,7 +726,10 @@ footer p{
 
 
   @media (max-width: 550px) {
-   
+   body{
+    overflow-x: hidden;
+    
+   }
 
 
     .container {
@@ -776,7 +778,7 @@ footer p{
         text-align: center;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 99%;
         padding: 100px 20px 10px;
         
         
@@ -792,9 +794,14 @@ footer p{
      
      .section-hero .discription {
          padding: 30px 10;
-         width: 85%;
+         width: 100%;
+        
         
          
+     }
+
+     .section-hero .discription h4 {
+        font-size: 30px;
      }
 
 
@@ -835,12 +842,14 @@ footer p{
 
 .about .about-script {
     width: 100%;
-    padding: 30px 20px; 
+    padding: 30px 20px;
+    
+   
 }
 
 .about .about-script h4 {
     font-size: 40px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .about .about-script p {
@@ -959,7 +968,7 @@ footer p{
     color: var(--primary-color);
     text-align: center;
     margin: 20px 0 10px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .service .title {
