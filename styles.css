@@ -31,6 +31,11 @@ a {
     font-size: 18px;
 }
 
+.conple{
+    background-color: red;
+    width: 100%;
+}
+
 /* ✅ تنسيق النافبار */
 
  .container {
@@ -719,6 +724,9 @@ footer p{
 
 
   @media (max-width: 550px) {
+   body{
+    overflow-x: hidden;
+   }
 
 
     .container {
@@ -1106,7 +1114,6 @@ footer p{
   
   
   
-
 
 
 
