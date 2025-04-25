@@ -39,9 +39,11 @@ a {
 
 /* ✅ تنسيق النافبار */
 
- .container {
-    position:  fixed;
-    width: 100%;
+  .container {
+    position:  sticky;
+    
+    top: 0;
+    
 
 }
 .navbar {
