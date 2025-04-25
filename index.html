@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hype Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body dir="rtl"> <!-- الاتجاه الافتراضي للعربية -->
+
+    <!-- ✅ قسم النافبار -->
+    <div class="container">
+       
+        <nav class="navbar">
+            <div><a href="#home"><img src="images/logomaystore.jpg" alt=""></a></div>
+            <div class="mainn">
+                <ul >
+                    <li><a href="#home" data-lang="home">الرئيسية</a></li>
+                    <li><a href="#about" data-lang="about"> عن المنتج؟</a></li>
+                    <li><a href="#service" data-lang="service">عن التوصيل؟</a></li>
+                    
+                </ul>
+                <button class="close"><i class="material-symbols-outlined">Close</i></button>
+            </div>
+            
+            <button id="btn-main"><i class="material-symbols-outlined">menu</i></button>
+
+         
+            
+        </nav>
+
+    </div>
+    
+
+    <!-- ✅ قسم الرئيسية -->
+    <section id="home" class="section-hero">
+        <div class="image">
+            <img id="mainImage" src="images/WhatsApp Image 2025-04-09 at 02.28.01_30f6ccda.jpg" alt="image">
+            <div class="thumbnails">
+                <img src="images/WhatsApp Image 2025-04-09 at 02.28.01_e783e021.jpg" onclick="changeImage(this)" alt="صورة 1">
+                <img src="images/WhatsApp Image 2025-04-09 at 02.28.01_30f6ccda.jpg" onclick="changeImage(this)" alt="صورة 2">
+                <img src="images/WhatsApp Image 2025-04-09 at 02.28.02_c3e4c5dc.jpg" onclick="changeImage(this)" alt="صورة 3">
+            </div>
+        </div>
+ 
+        <div class="discription">
+            <h4 data-lang="nameproduct"> سماعاب بلوتوت AirPods Pro  </h4>
+            <div>
+                <span data-lang="price">149</span>
+                <span class="mad" data-lang="mad">درهم</span>
+            </div>
+            <p data-lang="descripproducat">
+                نقدم لك تجربة صوت فريدة مع منتجنا الأكتر طلبا في السوق استمتع بتجربة صوت رائعة وخالية من الضوضاء سماعات مطابقة للأصلية بجميع ميزاتها التي تمنحك تجبة رائعة 
+            </p>
+            <button  onclick="showForm()" data-lang="btndasha">أطلب الاَن</button>
+        </div>
+
+
+        <!-- نموذج الطلب -->
+        <div id="overlay"></div>
+
+        <div id="app-form" class="app-form">
+            
+            <form class="forms" id="orderForm" action="https://formspree.io/f/xdkezewz" method="POST">
+                <!-- تعديل هنا: استبدال input بنوع select للخيارات -->
+                <div class="select">
+                    <div><img src="images/air1.jpg" alt=""></div>
+                  <label for="product" data-lang="dspro">اختر نوع السماعات :</label>
+                  <select id="product"  name="product"  required>
+                    <option block value="   اختر نوع السماعات" disabled >اختر نوع السماعات</option>
+                    <option value="سماعات تحتوي على جلدة">AirPods 3  (جلدة) </option>
+                    <option value="سماعات عادية"> AirPods pro 2 (بدون جلدة) </option>
+                  </select>
+                </div>
+                <div class="form-container">
+                    
+
+
+                    <label for="name" data-lang="pname">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" placeholder="ادخل اسمك" data-lang="ppname" required>
+            
+                    <label for="adress" data-lang="adress"> العنوان:</label>
+                    <input type="text" id="adress" name="adress" placeholder="ادخل العنوان كاملا" data-lang="ppadress" required>
+            
+                    <label for="phone" data-lang="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="ادخل رقم هاتفك" data-lang="pphone" required>
+            
+                    
+            
+                    <button type="submit" data-lang="completash">إتمام الطلب</button>
+                    <button type="button" onclick="nonOrdr()" data-lang="delash">إلغاء الطلب</button>
+                </div>
+            </form>
+            
+            
+            
+            
+    
+        </div>
+        
+    </section>
+
+     <!--  about -->
+     <section class="about" id="about">
+        <h2 data-lang="aboutpro">مميزات المنتج </h2>
+        <div class="about-atim">
+            <div class="about-script">
+                <h4 data-lang="titleaboutpro">AirPods Pro – نسخة طبق الأصل بجودة عالية</h4>
+                <p data-lang="p1aboutpro">
+                    -  🔊 جودة صوت ممتازة: صوت نقي وواضح مع عزل جيد للضوضاء.
+                </p>
+                <br>
+                <p data-lang="p2aboutpro">
+                    -  🧠 تصميم مطابق للأصلية: نفس الشكل والتفاصيل بدقة عالية – صعب تفرق بينها وبين الأصلية.
+                </p>
+                <br>
+                <p data-lang="p3aboutpro">
+                    - 🎧 راحة في الاستخدام: خفيفة ومريحة في الأذن لساعات طويلة.
+                </p>
+                <br>
+                <p data-lang="p4aboutpro">
+                    - 🔋 بطارية قوية: تدوم لفترة طويلة مع علبة شحن 
+                </p>
+                <br>
+                <p data-lang="p5aboutpro">
+                    - 📱 تتصل تلقائيًا: تدعم الاتصال السريع بالأجهزة 
+                </p>
+                <br>
+                <p data-lang="p6aboutpro">
+                    - 💦 مقاومة للعرق: مناسبة للرياضة والحركة.
+                </p>
+                <br>
+                <p class="abut" data-lang="p7aboutpro">
+                    - 💵 سعر مناسب وجودة مضمونة: تحصل على تجربة قريبة جدًا من الأصل بسعر أقل بكثير.
+
+                </p>
+                <a href="https://wa.me/message/L7W7OLB7QDBAN1" data-lang="p8aboutpro" target="_blank">للطلب عبر الواتساب</a>
+            </div>
+            <div class="image">
+                <img src="images/imageads.jpg" alt="">
+            </div>
+            
+
+        </div>
+     </section>
+  
+
+    <!-- ✅ خدماتنا-->
+    <section id="service" class="service">
+        <h2 data-lang="aboutdelivery"> خدماتنا</h2>
+        <div class="title" >
+            <h4 data-lang="titledelivery">أحصل على طلبيتك في ثلاثة مراحل فقط</h4>
+            <p data-lang="pdelivery">لا تقلق بشأن ذلك نحن هنا لنقدم لك أفضل تجربة . إليك مراحل الحصول على طابيتك بأسرع وقت </p>
+
+        </div>
+        <div class="service-cart">
+            <div class="cart">
+                <img src="images/donee.jpg" alt="image">
+                <h5 data-lang="title1">قم بإتمام الطلب</h5>
+                <p data-lang="par1">اختر طلبيتك المفضلة وأرسل طلبك بسهولة عبر واتساب أو الموقع، وسنؤكد طلبك فورًا! </p>
+                <div class="etap"><span>1</span></div>
+
+            </div>
+            <div class="cart">
+                <img src="images/chahn.jpg" alt="image">
+                <h5 data-lang="title2">شحن طلبيتك</h5>
+                <p data-lang="par2">نجهز طلبك بعناية ونرسله عبر أسرع شركات الشحن لتصلك الطلبية في أسرع وقت ممكن.</p>
+                <div class="etap"><span>2</span></div>
+            </div>
+            <div class="cart">
+                <img src="images/cash-on-dl.jpg" alt="image">
+                <h5 data-lang="title3">الدفع عند الإستلام</h5>
+                <p data-lang="par3">استلم الطلبية وفحصها بنفسك، ثم ادفع عند التسليم بكل راحة وأمان!</p>
+                <div class="etap"><span>3</span></div>
+            </div>
+            <button class="achet-butoon" onclick="showForm()" data-lang="btndasha">أطلب الاَن</button>
+            
+            
+        </div>
+    </section>
+
+    
+
+    
+
+    
+    <footer>
+        
+        <div class="footer">
+            <div class="list">
+
+                <ul>
+                    <li><a href="#home" data-lang="home">الرئيسية</a></li>
+                    <li><a href="#about" data-lang="about"> عن المنتج</a></li>
+                    <li><a href="#service" data-lang="service">عن التوصيل</a></li>
+                    
+                </ul>
+    
+            </div>
+            <div class="sosial">
+                <h4   data-lang="Followuson">تابعنا على</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/webcrafted06/" target="_blank">
+                            <img src="images/insta icon.jpeg" alt="image">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/message/L7W7OLB7QDBAN1" target="_blank">
+                            <img src="images/whatsapp.jpeg" alt="image">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61575201503405" target="_blank">
+                            <img src="images/facbk icon.jpeg" alt="image">
+                            
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+        <p>All Rights Reserved © 2024.Created</p>
+    </footer>
+
+    
+
+        <script src="script.js"></script> <!-- تضمين ملف الجافا سكربت الخاص بتغيير اللغة -->
+    </body>
+    </html>
+    
