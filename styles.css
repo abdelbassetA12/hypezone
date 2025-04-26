@@ -121,7 +121,7 @@ a {
 
 .section-hero .discription h4 {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 40px;
     color: var(--paragraf-color);
 }
 
@@ -168,7 +168,7 @@ a {
 }
 
 .section-hero .image {
-    width: 50%;
+    width: 40%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
