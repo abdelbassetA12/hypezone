@@ -811,7 +811,7 @@ footer p{
 
 
      .section-hero .app-form {
-        display: block;
+        display: none;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -821,11 +821,19 @@ footer p{
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         border: 1px solid var(--primary-color);
         border-radius: 10px;
-        padding: 15px;
+        padding: 0;
         
         z-index: 2;
     
     }
+
+    .section-hero .app-form .forms {
+    
+        margin: 30px auto;
+        padding: 0 20px;
+        
+    }
+    
 
 
 
